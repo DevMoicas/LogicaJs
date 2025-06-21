@@ -7,3 +7,21 @@
  * - Múltiplos de 3 y de 5 a la vez por la palabra "fizzbuzz".
  */
 
+function fizzbuzz () {
+    
+    for(let i = 1; i <= 100; i++) { 
+        if(i % 3 == 0 && i % 5 == 0) {
+            console.log(`FizzBuzz${i}`)
+            } else if(i % 5 == 0) {
+                console.log(`Buzz${i}`)
+            } else if(i % 3 == 0){ 
+                console.log(`Fizz`)
+        } else {
+            console.log(`${i}`)
+        }
+    }
+}
+
+fizzbuzz()
+
+console.log("Ejercicio completado")
